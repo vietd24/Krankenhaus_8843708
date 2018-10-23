@@ -1,0 +1,16 @@
+
+extend layout
+block content
+    a(class='button' href='/') Zurück
+    div(class='tablediv')
+        table
+            tr(class='tablehead')
+                each index in keys
+                    th #{index.split('').map((v,i) => (i === 0 ? v.toUpperCase() : v)).join('')}
+            for row in tablecontent
+                tr    
+                    each index in keys
+                        td 
+                            | #{row[index]}
+                        
+        

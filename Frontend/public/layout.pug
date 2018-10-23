@@ -1,0 +1,18 @@
+doctype
+html
+    head
+        title #{tablename}
+        meta(name="viewport",content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet',href='style.css')
+        link(rel='stylesheet',href="https://fonts.googleapis.com/css?family=Raleway")
+    body
+        header
+        h1 You are displaying #{tablename} 
+        p
+          //  = JSON.stringify( tablecontent )
+        .main-content
+            block content
+    footer
+        p 
+           <b>Running on node with Express and <i> pug </i><b><br>
+           <i>Nguyen Viet Do </i> <b> 8843708 <b>
